@@ -1,0 +1,6 @@
+-Komment jel: # (ez már nem fordul)
+-Zárójelek használata érdemes a tisztább kód miatt!
+-logikai kifejezések ugyanazok mint Java-ban (<,>,==,!=,>=,<=,&,|,!)
+-különbséget tesz kis- és nagybetû között
+-help() fgv-nyel keresés a manualban (help.start() - behozza magát a manualt!)
+-objektumorientált! (még a function-ök is objektumok a function osztályból!)
