@@ -1,6 +1,17 @@
--Komment jel: # (ez m�r nem fordul)
--Z�r�jelek haszn�lata �rdemes a tiszt�bb k�d miatt!
--logikai kifejez�sek ugyanazok mint Java-ban (<,>,==,!=,>=,<=,&,|,!)
--k�l�nbs�get tesz kis- �s nagybet� k�z�tt
--help() fgv-nyel keres�s a manualban (help.start() - behozza mag�t a manualt!)
--objektumorient�lt! (m�g a function-�k is objektumok a function oszt�lyb�l!)
+-Komment jel: # (ez már nem fordul)
+-Zárójelek használata érdemes a tisztább kód miatt!
+-logikai kifejezések ugyanazok mint Java-ban (<,>,==,!=,>=,<=,&,|,!)
+-különbséget tesz kis- és nagybetû között
+-help() fgv-nyel keresés a manualban (help.start() - behozza magát a manualt!)
+-objektumorientált! (még a function-ök is objektumok a function osztályból!)
+-minden vektorban van tárolva alapból(még az elemek is)
+- c fgv(combine röviden) segítségével hozhatunk létre vektort elemekből(bármilyen típusú is az)
+- : operátorral számvektorokat tudunk létrehozni (pl 7:20 létrehoz egy vektort számokkal 7-20, 20:7 pedig 20-7 között)
+- factor a vektorból olyan levels vectort hoz létre +-ba ami a vektor egyedi elemeit növekvő sorrendbe gyűjti ki
+- legtöbb fgv vectorokon alkalmazható(általános fgvek: mean(),max(),min(),range(),length() stb.)
+- vannak olyan fgv-ek amelyek a vektor összes elemére külön vannak hatással(pl: alapműveletek)
+- recycle (vektor vektoron ha nem egyformák)
+- fgv-eknek általában több argumentumuk van, melyeket hívásnál megadhatunk(nem kötelező ha van default érték)s
+- fgvhívásnál az argumentumok nevei elhagyhatóak ha sorba adunk nekik értéket(ha megadjuk a nevüket akkor felcserélhetőek)
+- adatelemzésnél fontos h a vektorok összes eleme helyett letudjam kérni csak a szükségeseket(subsets)
+
