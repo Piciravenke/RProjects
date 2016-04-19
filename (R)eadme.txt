@@ -14,4 +14,11 @@
 - fgv-eknek általában több argumentumuk van, melyeket hívásnál megadhatunk(nem kötelező ha van default érték)s
 - fgvhívásnál az argumentumok nevei elhagyhatóak ha sorba adunk nekik értéket(ha megadjuk a nevüket akkor felcserélhetőek)
 - adatelemzésnél fontos h a vektorok összes eleme helyett letudjam kérni csak a szükségeseket(subsets)
+- subsetek létrehozhatóak logikai vektorral is
+- az alvektorban az elemek sorrendje az eredeti vektor alapján van
+- hiányzó adatok kezelése fontos (is.na() fgv használatával)!
+- Lehet saját fgv-eket írni! (könyv 46. oldal)
+- fgvírásnál adhatunk default értéket a paramétereknek!
+- dátumfgv-ek vektorként való használata értékvektorokkal együtt( valójában nem vektorok, de használhatóak úgy!)
+- csv fájl feldolgozásas
 

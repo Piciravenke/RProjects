@@ -56,3 +56,12 @@ x[c(3,1)]
 x[length(x):1] #megfordítja az elemek sorrendjét a vektorban! FONTOSNAK TŰNIK!
 x[3:8] = c(15,16) #recycle itt is érvényes
 x
+
+x = c(2,5,1,0)
+x[2] = NA
+x
+is.na(x)
+!is.na(x)
+x[!is.na(x)] # csak létező elemek kiíratása
+mean(x[!is.na(x)])
+mean(x, na.rm = TRUE)
