@@ -24,3 +24,21 @@ plot(tmax ~ time, type = "l")
 pdf("/home/miki/RProjects/time_series.pdf")
 plot(tmax ~ time, type = "l") 
 dev.off()
+
+num = 1:4
+lower = c("a","b","c","d")
+upper = c("A","B","C","D")
+df = data.frame(num, lower, upper, stringsAsFactors = FALSE)
+df
+row5 = c(5,"e","E")
+df =rbind(df,row5)
+df
+word = c("One","Two","Three","Four","Five")
+df = cbind(df, word, stringsAsFactors = FALSE)
+df
+dim(df)
+rownames(df)
+colnames(df)
+colnames(df) = toupper(colnames(df))
+colnames(df)
+str(df)

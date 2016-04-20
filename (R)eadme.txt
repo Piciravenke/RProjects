@@ -20,5 +20,6 @@
 - Lehet saját fgv-eket írni! (könyv 46. oldal)
 - fgvírásnál adhatunk default értéket a paramétereknek!
 - dátumfgv-ek vektorként való használata értékvektorokkal együtt( valójában nem vektorok, de használhatóak úgy!)
-- csv fájl feldolgozásas
+- csv fájl feldolgozása
+- táblázatok készítése vektorokból a data.frame osztály segítségével
 
