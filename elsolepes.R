@@ -65,3 +65,33 @@ is.na(x)
 x[!is.na(x)] # csak létező elemek kiíratása
 mean(x[!is.na(x)])
 mean(x, na.rm = TRUE)
+
+num = 1:4
+lower = c("a","b","c","d")
+upper = c("A","B","C","D")
+df = data.frame(num, lower, upper, stringsAsFactors = FALSE)
+df
+#word = c("One","Two","Three","Four")
+df = cbind(df, word, stringsAsFactors = FALSE)
+df
+dim(df)
+rownames(df)
+colnames(df)
+colnames(df) = toupper(colnames(df))
+colnames(df)
+str(df)
+df[2,3]
+df[ ,3, drop = FALSE]
+df[df$LOWER %in% c("a","d"), c("LOWER","UPPER")]
+df$word[df$num == 2] = "Two"
+write.csv(df, "/home/miki/RProjects/df.csv")
+
+x = 3
+if(x > 2) print("x is large!") else print("x is small!")
+x = 1
+if(x > 2) {print("x is large!")} else {print("x is small!")}
+
+x = c(-1,-8,2,5,-3,5,-9)
+ifelse(x < 0, -x, x)
+
+for(i in 1:5) {print(i)}

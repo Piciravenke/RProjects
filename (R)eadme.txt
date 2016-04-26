@@ -22,4 +22,10 @@
 - dátumfgv-ek vektorként való használata értékvektorokkal együtt( valójában nem vektorok, de használhatóak úgy!)
 - csv fájl feldolgozása
 - táblázatok készítése vektorokból a data.frame osztály segítségével
-
+- résztáblákat lehet létrehozni vektorként(subset) $ operátorral (tábanév$oszlopnév)
+- mivel vektorok ezek a subsetek bármilyen vektormetódus használható
+- nem ábrázolt értékeket mindig át kell váltani NA-ra!!!
+- (hasonlóan működik a tábla mint a 2 dimenziós mátrix)
+- if használata feltételes utasításokhoz(teljesen hasonló a java-hoz)
+- ifelse (lásd: 76 oldal könyv)
+- for ciklus (pl: for(i in 1:5){} )
