@@ -1,4 +1,4 @@
--Komment jel: # (ez már nem fordul)
+﻿-Komment jel: # (ez már nem fordul)
 -Zárójelek használata érdemes a tisztább kód miatt!
 -logikai kifejezések ugyanazok mint Java-ban (<,>,==,!=,>=,<=,&,|,!)
 -különbséget tesz kis- és nagybetû között
@@ -29,3 +29,10 @@
 - if használata feltételes utasításokhoz(teljesen hasonló a java-hoz)
 - ifelse (lásd: 76 oldal könyv)
 - for ciklus (pl: for(i in 1:5){} )
+- apply fgv-ek használata ciklusok helyett adatok elemzésére (tapply, apply)
+- adatok újraformázása szükséges szine mindig (reshape fgv-ek)
+- aggregálás ddply használatával
+- mátrixok(2d) és tömbök(3d)
+- raster objektumok gyakorlatilag mátrixok vagy tömbök, extra földrajzi adatokkal
+- vector layers újabb földrajzi objektum
+- rgeos csomag fgv-ei fontosak!

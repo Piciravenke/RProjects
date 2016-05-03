@@ -95,3 +95,69 @@ x = c(-1,-8,2,5,-3,5,-9)
 ifelse(x < 0, -x, x)
 
 for(i in 1:5) {print(i)}
+
+iris=iris[sample(1:nrow(iris),6),]
+x = tapply(iris$Petal.Width, iris$Species, mean)
+x
+x["setosa"]
+as.numeric(x)
+
+apply(iris[, 1:4], 1, mean)
+apply(iris[, 1:4], 2, mean)
+
+iris[3,2] = NA
+iris
+apply(iris[, 1:4], 2, mean)
+apply(iris[, 1:4], 2, mean, na.rm = TRUE)
+
+library(reshape2)
+library(plyr)
+iris_melt = melt(iris, id.vars = "Species")
+ddply(iris,.(Species),summarize,sepal_area = mean(Sepal.Length * Sepal.Width),petal_area = mean(Petal.Length * Petal.Width))
+
+
+x = matrix(7:12, ncol = 3)
+length(x)
+nrow(x)
+ncol(x)
+dim(x)
+
+m = matrix(NA, ncol = 3, nrow = 3)
+m[2:3, 1:2] = matrix(1:4, nrow = 2)
+m
+
+y = array(1:24, c(2,2,3))
+y
+
+library(raster)
+r1 = raster(x)
+r1
+
+addresses = c("2200 Sunport Blvd, Albuquerque, NM 87106, USA","7401 Paseo Del Volcan Northwest Albuquerque, NM 87121, USA","121 Aviation Dr, Santa Fe, NM 87507, USA")
+library(ggmap)
+airports = geocode(addresses)
+airports 
+airports$name = c("Albuquerque International","Double Eagle II","Santa Fe Municipal")
+airports
+library(sp)
+coordinates(airports) = ~ lon + lat
+class(airports)
+print(airports)
+proj4string(airports) = CRS("+proj=longlat +datum=WGS84")
+library(rgdal)
+writeOGR(airports, "D:\\R Project\\RProjects", "airports", "ESRI Shapefile")
+airports = readOGR("D:\\R Project\\RProjects","airports",stringsAsFactors = FALSE)
+
+summary(airports)
+proj4string(airports)
+length(airports)
+row.names(airports)
+dimensions(airports)          
+airports@data
+str(airports)
+
+airports_sp = as(airports, "SpatialPoints")
+airports_sp@data
+as(airports_sp, "SpatialPointsDataFrame")@data
+plot(airports)
+coordinates(airports)
