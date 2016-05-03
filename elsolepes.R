@@ -1,3 +1,13 @@
+#install.packages("sp", lib="/data/Rpackages/")
+library(reshape2)
+library(plyr)
+library(raster)
+library(ggmap)
+library(sp)
+library(rgdal)
+library(rgeos)
+library(ggplot2)
+
 5+5
 6-3
 b = c(2,3,4,5.5,7)
@@ -110,8 +120,6 @@ iris
 apply(iris[, 1:4], 2, mean)
 apply(iris[, 1:4], 2, mean, na.rm = TRUE)
 
-library(reshape2)
-library(plyr)
 iris_melt = melt(iris, id.vars = "Species")
 ddply(iris,.(Species),summarize,sepal_area = mean(Sepal.Length * Sepal.Width),petal_area = mean(Petal.Length * Petal.Width))
 
@@ -129,22 +137,18 @@ m
 y = array(1:24, c(2,2,3))
 y
 
-library(raster)
 r1 = raster(x)
 r1
 
 addresses = c("2200 Sunport Blvd, Albuquerque, NM 87106, USA","7401 Paseo Del Volcan Northwest Albuquerque, NM 87121, USA","121 Aviation Dr, Santa Fe, NM 87507, USA")
-library(ggmap)
 airports = geocode(addresses)
 airports 
 airports$name = c("Albuquerque International","Double Eagle II","Santa Fe Municipal")
 airports
-library(sp)
 coordinates(airports) = ~ lon + lat
 class(airports)
 print(airports)
 proj4string(airports) = CRS("+proj=longlat +datum=WGS84")
-library(rgdal)
 writeOGR(airports, "D:\\R Project\\RProjects", "airports", "ESRI Shapefile")
 airports = readOGR("D:\\R Project\\RProjects","airports",stringsAsFactors = FALSE)
 
@@ -161,3 +165,4 @@ airports_sp@data
 as(airports_sp, "SpatialPointsDataFrame")@data
 plot(airports)
 coordinates(airports)
+

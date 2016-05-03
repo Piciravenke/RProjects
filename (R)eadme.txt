@@ -1,10 +1,10 @@
-﻿-Komment jel: # (ez már nem fordul)
--Zárójelek használata érdemes a tisztább kód miatt!
--logikai kifejezések ugyanazok mint Java-ban (<,>,==,!=,>=,<=,&,|,!)
--különbséget tesz kis- és nagybetû között
--help() fgv-nyel keresés a manualban (help.start() - behozza magát a manualt!)
--objektumorientált! (még a function-ök is objektumok a function osztályból!)
--minden vektorban van tárolva alapból(még az elemek is)
+﻿- Komment jel: # (ez már nem fordul)
+- Zárójelek használata érdemes a tisztább kód miatt!
+- logikai kifejezések ugyanazok mint Java-ban (<,>,==,!=,>=,<=,&,|,!)
+- különbséget tesz kis- és nagybetû között
+- help() fgv-nyel keresés a manualban (help.start() - behozza magát a manualt!)
+- objektumorientált! (még a function-ök is objektumok a function osztályból!)
+- minden vektorban van tárolva alapból(még az elemek is)
 - c fgv(combine röviden) segítségével hozhatunk létre vektort elemekből(bármilyen típusú is az)
 - : operátorral számvektorokat tudunk létrehozni (pl 7:20 létrehoz egy vektort számokkal 7-20, 20:7 pedig 20-7 között)
 - factor a vektorból olyan levels vectort hoz létre +-ba ami a vektor egyedi elemeit növekvő sorrendbe gyűjti ki
